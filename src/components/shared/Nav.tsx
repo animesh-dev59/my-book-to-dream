@@ -1,6 +1,7 @@
 import React from 'react'; 
 import LogoImg from '@/assets/book.ico';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Nav = () => {
   return (
@@ -18,7 +19,7 @@ const Nav = () => {
           <ul
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-50 mt-3 w-52 p-2 shadow-lg border border-slate-100">
-            <li><a className="font-medium text-emerald-600 bg-emerald-50">Home</a></li>
+            <li><a href='/books' className="font-medium text-emerald-600 bg-emerald-50">Home</a></li>
             <li><a className="font-medium">Listed Books</a></li>
             <li><a className="font-medium">Pages to Read</a></li>
           </ul>
@@ -37,9 +38,9 @@ const Nav = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 gap-2 items-center text-base">
           <li>
-            <a className="border border-emerald-500 text-emerald-600 font-semibold px-4 py-2 rounded-lg hover:bg-emerald-50 transition-all">
-              Home
-            </a>
+            <Link href='/books' className="border border-emerald-500 text-emerald-600 font-semibold px-4 py-2 rounded-lg hover:bg-emerald-50 transition-all">
+              Books
+            </Link>
           </li>
           <li>
             <a className="text-slate-600 font-medium px-4 py-2 rounded-lg hover:text-emerald-600 hover:bg-slate-50 transition-all">

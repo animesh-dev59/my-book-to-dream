@@ -1,6 +1,7 @@
 import React from 'react'; 
 import { IBook } from './types/type';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const BookCard = ({book}:{book:IBook}) => {
   return (
@@ -68,8 +69,10 @@ const BookCard = ({book}:{book:IBook}) => {
                   </svg>
                 </div>
               </div> 
-              <button className='btn btn-success mt-2'>view Details</button>
-
+            
+              <Link href={`/books/${book.bookId}`} className='btn btn-success mt-2 rounded-3xl hover:text-black hover:font-bold '>View Details
+            </Link>
+               
             </div>
   );
 };

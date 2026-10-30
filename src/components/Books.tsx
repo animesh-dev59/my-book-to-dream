@@ -15,11 +15,11 @@ const Books = async() => {
   const booksData = await getBooks()
   console.log(booksData,'booksdata is a student');
   return( 
-   <section className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 container mx-auto px-4'>       
+   <section className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 container my- mx-auto px-4'>       
    { 
-    booksData.map((book:IBook , ind:number)=>{  
-      return( <BookCard book={book} key={ind}/>
-     )
+    booksData.slice(0,8).map((book:IBook , ind:number)=>{  
+      return <BookCard book={book} key={ind}/>
+     
     })
 
    }
