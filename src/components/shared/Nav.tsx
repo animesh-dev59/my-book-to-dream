@@ -43,9 +43,9 @@ const Nav = () => {
             </Link>
           </li>
           <li>
-            <a className="text-slate-600 font-medium px-4 py-2 rounded-lg hover:text-emerald-600 hover:bg-slate-50 transition-all">
+            <Link href='/listed-books' className="text-slate-600 font-medium px-4 py-2 rounded-lg hover:text-emerald-600 hover:bg-slate-50 transition-all">
               Listed Books
-            </a>
+            </Link>
           </li>
           <li>
             <a className="text-slate-600 font-medium px-4 py-2 rounded-lg hover:text-emerald-600 hover:bg-slate-50 transition-all">

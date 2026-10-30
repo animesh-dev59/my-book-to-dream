@@ -1,6 +1,10 @@
-import React from 'react';
+ 'use client'
+import { BooksContext } from '@/context/BooksContextProvider';
+import React, { useContext } from 'react';
 
-const page = () => {
+const ListedBooks = () => { 
+  const {readBooks} = useContext(BooksContext)
+  console.log(readBooks,'readbooks is a best time');
   return (
     <div>
       <div className=' container mx-auto text-center py-6 my-6 bg-blue-400'>
@@ -12,4 +16,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default  ListedBooks;
